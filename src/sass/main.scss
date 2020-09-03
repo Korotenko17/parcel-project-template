@@ -7,8 +7,10 @@
 @import '../sass/components/container';
 @import './utils/modern-normalize';
 
-@import './header';
-@import './products';
-@import './feedback';
-@import './contacts';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/howeitsmade';
+@import './layout/feedback';
+@import './layout/contacts';
 
