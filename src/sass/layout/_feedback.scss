@@ -20,7 +20,11 @@ ul {
   font-family: DM Sans;
   margin-top: 0;
   margin-bottom: 56px;
-  font-weight: 500;
+  padding-top: 43px;
+  padding-bottom: 26px;
+  padding-left: 57px;
+  padding-right: 66px;
+  font-weight: 700;
   font-size: 12px;
   line-height: 2.58;
   text-align: center;
@@ -28,10 +32,17 @@ ul {
   background-color: #fafafa;
 }
 
+.separ {
+  width: 32px;
+  height: 4px;
+  fill: #c7133e;
+}
+
 .name-text {
   font-family: DM Sans;
   margin-top: 0;
-  font-weight: 500;
+  margin-bottom: 30px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.86;
 
@@ -42,4 +53,72 @@ ul {
 .checkbox-list {
   display: flex;
   justify-content: center;
+}
+
+.check-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-item:not(:last-child) {
+  margin-right: 18px;
+}
+
+.check-input:checked + .check-svg {
+  border-radius: 50%;
+  background: rgba(138, 59, 88, 0.5);
+  box-shadow: 0 0 1px 10px rgba(138, 59, 88, 0.4),
+    0 0 1px 20px rgba(138, 59, 88, 0.1), 0 0 1px 30px rgba(138, 59, 88, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .girl-photo {
+    margin-bottom: 19px;
+  }
+
+  .feedback-text {
+    padding-top: 30px;
+    padding-bottom: 28px;
+    margin-bottom: 58px;
+    padding-left: 57px;
+    padding-right: 66px;
+    font-size: 14px;
+    line-height: 2.16;
+    background-color: #fafafa;
+  }
+
+  .name-text {
+    margin-bottom: 35px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .girl-photo {
+    margin-bottom: 15px;
+  }
+
+  .feedback-text {
+    margin-bottom: 34px;
+    padding: 32px 54px;
+    font-size: 16px;
+
+    line-height: 1.86;
+    background-color: #fafafa;
+    letter-spacing: 0.04em;
+  }
+
+  .name-text {
+    margin-bottom: 35px;
+    font-weight: 700;
+    font-size: 20px;
+  }
 }
