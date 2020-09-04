@@ -83,7 +83,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1280px;
     padding-right: 115px;
     padding-left: 115px;
     margin-right: auto;
@@ -338,9 +338,9 @@ summary {
 }
 
 .header {
-  position: relative;
+  position: absolute;
+  width: 100%;
   font-family: DM Sans;
-  background-color: #ffb8ca;
   padding-top: 6px;
 }
 
@@ -548,12 +548,15 @@ summary {
 
 .hero-container {
   background-image: url("/icecream-mob.457a0ac6.png");
+  background-repeat: no-repeat;
   background-size: 171px 410px;
+  padding-top: 80px;
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (max-width: 767px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero-container {
     background-image: url("/icecream-mob@2x.01cb7168.png");
+    background-repeat: no-repeat;
   }
 }
 .hero-title {
