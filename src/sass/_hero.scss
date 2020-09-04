@@ -40,6 +40,8 @@
       line-height: 0.96;
       color: #d41443;
     }
+
+    margin-bottom: 19px;
   }
 
   .btn {
@@ -71,11 +73,25 @@
     }
   }
 
-  .hero-description,
+  .hero-description-container,
   .hero-container-right {
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    left: 0;
+    display: none;
+  }
+}
+
+// TABLET
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    background-size: 143px 336px;
+    background-image: url('../images/hero/icecream-tab.png');
+    padding-top: 63px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-container {
+      background-image: url('../images/hero/icecream-tab@2x.png');
+    }
   }
 }
