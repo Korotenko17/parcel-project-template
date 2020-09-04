@@ -66,6 +66,12 @@ ul {
   overflow: hidden;
 }
 
+.separ {
+  display: block;
+  margin: 0 auto 18px auto;
+  fill: #c7133e;
+}
+
 .checkbox-item:not(:last-child) {
   margin-right: 18px;
 }
@@ -73,8 +79,8 @@ ul {
 .check-input:checked + .check-svg {
   border-radius: 50%;
   background: rgba(138, 59, 88, 0.5);
-  box-shadow: 0 0 1px 10px rgba(138, 59, 88, 0.4),
-    0 0 1px 20px rgba(138, 59, 88, 0.1), 0 0 1px 30px rgba(138, 59, 88, 0.1);
+  box-shadow: 0 0 1px 8px rgba(119, 19, 62, 0.4),
+    0 0 1px 11px rgba(119, 19, 62, 0.1), 0 0 1px 14px rgba(119, 19, 62, 0.1);
 }
 
 @media screen and (min-width: 768px) {
@@ -91,6 +97,10 @@ ul {
     font-size: 14px;
     line-height: 2.16;
     background-color: #fafafa;
+  }
+
+  .separ {
+    margin-bottom: 14px;
   }
 
   .name-text {
@@ -110,10 +120,13 @@ ul {
     margin-bottom: 34px;
     padding: 32px 54px;
     font-size: 16px;
-
     line-height: 1.86;
     background-color: #fafafa;
     letter-spacing: 0.04em;
+  }
+
+  .separ {
+    display: none;
   }
 
   .name-text {
