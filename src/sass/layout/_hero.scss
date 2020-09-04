@@ -8,15 +8,17 @@
 
 .hero-container {
   background-image: url('../images/hero/icecream-mob.png');
+  background-repeat: no-repeat;
   background-size: 171px 410px;
+  padding-top: 80px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx),
-  screen and (max-width: 767px) {
+  screen and (min-resolution: 2dppx) {
   .hero-container {
     background-image: url('../images/hero/icecream-mob@2x.png');
+    background-repeat: no-repeat;
   }
 }
 
