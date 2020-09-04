@@ -72,7 +72,7 @@
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1199px) {
   .menu-wrapper {
     display: none;
     position: absolute;
@@ -149,13 +149,14 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .header {
     // для видимости хедера. этот бэкграунд нужно будет удалить когда секция героя натянется под хедер
     background-color: $hero-background-color;
     //
 
     .container {
+      width: 1280px;
       padding-left: 46px;
     }
   }
