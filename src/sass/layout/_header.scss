@@ -2,18 +2,11 @@
   position: relative;
   font-family: DM Sans;
   background-color: $hero-background-color;
-}
-
-@media screen and (max-width: 767px) {
-  .container {
-    padding-top: 6px;
-    max-width: 320px;
-    margin: 0 auto;
-  }
-  
+  padding-top: 6px;
 }
 
 .header .container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,8 +24,8 @@
   font-size: 16px;
   line-height: 1.31;
 
-  color: #d41443;
-  background-color: #ffffff;
+  color: $primary-title-color;
+  background-color: $secondary-white-color;
   border-radius: 22px;
 
   width: 209px;
@@ -48,7 +41,7 @@
 
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background-color: $hover-button-color;
   }
 
   .icon-arrow {
@@ -62,7 +55,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 5;
+  z-index: 20;
 
   .icon-close {
     display: none;
@@ -83,11 +76,11 @@
   .menu-wrapper {
     display: none;
     position: absolute;
-    top: 0;
+    top: -6px;
     right: 0;
-    background-color: #E17992;
+    background-color: $menu-bg-color;
     width: 250px;
-    z-index: 4;
+    z-index: 10;
     padding-top: 60px;
     padding-right: 20px;
     padding-bottom: 171px;
@@ -99,7 +92,7 @@
 
     @media screen and (min-width: 768px) {
       width: 254px;
-      z-index: 4;
+      top: -37px;
       padding-right: 24px;
       padding-bottom: 689px;
       padding-left: 34px;
@@ -111,10 +104,13 @@
   }
 
   .site-nav-item {
-    border-top: 1px solid $hero-background-color;
     border-bottom: 1px solid $hero-background-color;
     padding-top: 12px;
     padding-bottom: 12px;
+  }
+
+  .site-nav-item:first-child {
+    border-top: 1px solid $hero-background-color;
   }
 }
 
@@ -122,11 +118,11 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
-  color: #ffffff;
+  color: $secondary-white-color;
 
   &:hover,
   &:focus {
-    color: #d41443;
+    color: $primary-title-color;
   }
 }
 
@@ -134,23 +130,20 @@
   .header {
     padding-top: 37px;
   }
-  .container {
-    width: 768px;
-  }
 
   .header-btn {
     width: 186px;
     padding-left: 53px;
 
     .icon-arrow {
-      margin-left: 16px;
+      margin-left: 14px;
     }
   }
 
   .menu-btn {
     &.is-open {
       position: absolute;
-      top: 23px;
+      top: -14px;
       right: 34px;
     }
   }
@@ -158,11 +151,11 @@
 
 @media screen and (min-width: 1280px) {
   .header {
-    // для видимости хедера
+    // для видимости хедера. этот бэкграунд нужно будет удалить когда секция героя натянется под хедер
     background-color: $hero-background-color;
+    //
 
     .container {
-      width: 1280px;
       padding-left: 46px;
     }
   }
