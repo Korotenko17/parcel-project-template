@@ -18,7 +18,8 @@
   height: 50px;
 }
 
-.header-btn {
+.header-btn,
+.tablet-btn {
   display: block;
   font-weight: 700;
   font-size: 16px;
@@ -46,6 +47,17 @@
 
   .icon-arrow {
     margin-left: 26px;
+  }
+}
+
+.tablet-btn {
+  display: none;
+  width: 160px;
+  padding-right: 35px;
+  padding-left: 35px;
+
+  .icon-arrow {
+    margin-left: 8px;
   }
 }
 
@@ -147,14 +159,21 @@
       right: 34px;
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    .tablet-btn {
+      display: block;
+      margin-left: 30px;
+    }
+
+    .logo {
+      margin-right: 291px;
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .header {
-    // для видимости хедера. этот бэкграунд нужно будет удалить когда секция героя натянется под хедер
-    background-color: $hero-background-color;
-    //
-
     .container {
       width: 1280px;
       padding-left: 46px;
