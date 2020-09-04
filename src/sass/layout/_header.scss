@@ -1,7 +1,16 @@
 .header {
-  padding-top: 6px;
   position: relative;
   font-family: DM Sans;
+  background-color: $hero-background-color;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-top: 6px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  
 }
 
 .header .container {
@@ -10,12 +19,14 @@
   justify-content: space-between;
 }
 
-// .logo {
-//   width: 199px;
-//   height: 50px;
-// }
+.logo {
+  display: block;
+  width: 199px;
+  height: 50px;
+}
 
 .header-btn {
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
@@ -35,40 +46,17 @@
   padding-bottom: 12px;
   padding-left: 62px;
 
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 19px;
-
   &:hover,
   &:focus {
     background-color: #ecebeb;
   }
 
   .icon-arrow {
-    margin-left: 27px;
-  }
-}
-
-.menu-wrapper {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #e17992;
-  width: 250px;
-  z-index: 4;
-  padding-top: 60px;
-  padding-right: 20px;
-  padding-bottom: 689px;
-  padding-left: 21px;
-
-  &.is-open {
-    display: block;
+    margin-left: 26px;
   }
 }
 
 .menu-btn {
-  position: relative;
   display: block;
   font-size: 0;
   padding: 0;
@@ -91,11 +79,43 @@
   }
 }
 
-.site-nav-item {
-  border-top: 1px solid #e18298;
-  border-bottom: 1px solid #e18298;
-  padding-top: 12px;
-  padding-bottom: 12px;
+@media screen and (max-width: 1279px) {
+  .menu-wrapper {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #E17992;
+    width: 250px;
+    z-index: 4;
+    padding-top: 60px;
+    padding-right: 20px;
+    padding-bottom: 171px;
+    padding-left: 21px;
+
+    &.is-open {
+      display: block;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 254px;
+      z-index: 4;
+      padding-right: 24px;
+      padding-bottom: 689px;
+      padding-left: 34px;
+    }
+  }
+
+  .header-btn {
+    margin-bottom: 19px;
+  }
+
+  .site-nav-item {
+    border-top: 1px solid $hero-background-color;
+    border-bottom: 1px solid $hero-background-color;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .site-nav-item-link {
@@ -107,5 +127,84 @@
   &:hover,
   &:focus {
     color: #d41443;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 37px;
+  }
+  .container {
+    width: 768px;
+  }
+
+  .header-btn {
+    width: 186px;
+    padding-left: 53px;
+
+    .icon-arrow {
+      margin-left: 16px;
+    }
+  }
+
+  .menu-btn {
+    &.is-open {
+      position: absolute;
+      top: 23px;
+      right: 34px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    // для видимости хедера
+    background-color: $hero-background-color;
+
+    .container {
+      width: 1280px;
+      padding-left: 46px;
+    }
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .menu-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .header-btn {
+    width: 159px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    .icon-arrow {
+      margin-left: 12px;
+    }
+  }
+
+  .logo {
+    margin-right: 110px;
+  }
+
+  .navigation {
+    margin-right: 110px;
+  }
+
+  .site-nav {
+    display: flex;
+  }
+
+  .site-nav-item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .site-nav-item-link {
+    font-size: 16px;
+    line-height: 1.31;
   }
 }
