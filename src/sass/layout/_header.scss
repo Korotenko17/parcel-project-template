@@ -1,7 +1,7 @@
 .header {
-  position: relative;
+  position: absolute;
+  width: 100%;
   font-family: DM Sans;
-  background-color: $hero-background-color;
   padding-top: 6px;
 }
 
@@ -18,7 +18,8 @@
   height: 50px;
 }
 
-.header-btn {
+.header-btn,
+.tablet-btn {
   display: block;
   font-weight: 700;
   font-size: 16px;
@@ -49,6 +50,17 @@
   }
 }
 
+.tablet-btn {
+  display: none;
+  width: 160px;
+  padding-right: 35px;
+  padding-left: 35px;
+
+  .icon-arrow {
+    margin-left: 8px;
+  }
+}
+
 .menu-btn {
   display: block;
   font-size: 0;
@@ -72,7 +84,7 @@
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1199px) {
   .menu-wrapper {
     display: none;
     position: absolute;
@@ -147,15 +159,23 @@
       right: 34px;
     }
   }
+
+  @media screen and (max-width: 1199px) {
+    .tablet-btn {
+      display: block;
+      margin-left: 30px;
+    }
+
+    .logo {
+      margin-right: 291px;
+    }
+  }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .header {
-    // для видимости хедера. этот бэкграунд нужно будет удалить когда секция героя натянется под хедер
-    background-color: $hero-background-color;
-    //
-
     .container {
+      width: 1280px;
       padding-left: 46px;
     }
   }
