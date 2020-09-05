@@ -104,6 +104,11 @@ span {
 }
 
 @media screen and (min-width: 768px) {
+  .feedback {
+    padding-top: 279px;
+    padding-bottom: 197px;
+  }
+
   .icecreams {
     transform: translateY(-105px);
   }
@@ -136,6 +141,11 @@ span {
 }
 
 @media screen and (min-width: 1280px) {
+  .feedback {
+    padding-top: 406px;
+    padding-bottom: 210px;
+  }
+
   .icecreams {
     transform: translateY(-171px);
   }
