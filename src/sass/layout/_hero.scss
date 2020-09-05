@@ -2,75 +2,124 @@
 
 .hero-section {
   background: $hero-background-color;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
 }
 
 // MOBILE
 
 .hero-container {
-  background-image: url('../images/hero/icecream-mob.png');
-  background-repeat: no-repeat;
-  background-size: 171px 410px;
-  padding-top: 80px;
+  padding-top: 193px;
+  padding-bottom: 160px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero-container {
-    background-image: url('../images/hero/icecream-mob@2x.png');
-    background-repeat: no-repeat;
+@media screen and (max-width: 767px) {
+  .hero-info-container {
+    display: flex;
+  }
+
+  .hero-title {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $secondary-white-color;
+
+    > span {
+      font-size: 48px;
+      line-height: 0.96;
+      color: $primary-title-color;
+    }
+
+    margin-bottom: 19px;
+  }
+
+  .product-btn {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    margin: auto;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    cursor: pointer;
+
+    color: $secondary-white-color;
+    background-color: $primary-title-color;
+
+    margin-right: 8px;
+  }
+
+  .how-btn {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    margin: auto;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    cursor: pointer;
+
+    color: $primary-title-color;
+    background-color: $secondary-white-color;
+  }
+
+  .hero-circle {
+    width: 346px;
+    height: 344px;
+    background-color: $text-clock-color;
+    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    bottom: 75px;
+    z-index: -1;
+  }
+
+  .hero-ice-cream {
+    position: relative;
+    top: 9px;
+    left: 81px;
+    width: 171px;
+    height: 410px;
+    z-index: 0;
+  }
+
+  .hero-work,
+  .hero-description-container {
+    display: none;
   }
 }
 
-.hero-title {
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #ffffff;
+// TABLET
 
-  > span {
-    font-size: 48px;
-    line-height: 0.96;
-    color: #d41443;
-  }
-}
-
-.products-btn {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
-  background-color: #d41443;
-  border-radius: 20px;
-  border: none;
-  margin: auto;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  cursor: pointer;
-}
-
-.how-btn {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
-  align-items: center;
-  text-align: center;
-  color: #d41443;
-  background-color: #ffffff;
-  border-radius: 20px;
-  border: none;
-  margin: auto;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  cursor: pointer;
-}
+// @media screen and (min-width: 768px) {
+//   .hero-container {
+//     background-size: 143px 336px;
+//     background-image: url('../images/hero/icecream-tab.png');
+//     padding-top: 63px;
+//   }
+//   @media screen and (min-device-pixel-ratio: 2),
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx) {
+//     .hero-container {
+//       background-image: url('../images/hero/icecream-tab@2x.png');
+//     }
+//   }
+// }
