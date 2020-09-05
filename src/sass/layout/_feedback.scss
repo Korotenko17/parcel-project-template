@@ -5,14 +5,32 @@ ul {
   list-style: none;
 }
 
+span {
+  border-bottom: 1px solid #e1e1e1;
+}
+
 .feedback {
+  position: relative;
   padding-top: 154px;
   padding-bottom: 170px;
 }
 
+.icecreams {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50px);
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+
+.feedback-list {
+  text-align: -webkit-center;
+}
+
 .girl-photo {
   display: block;
-  margin: auto;
   margin-bottom: 29px;
 }
 
@@ -84,6 +102,11 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
+  .icecreams {
+    transform: translateY(-105px);
+    margin-bottom: 121px;
+  }
+
   .girl-photo {
     margin-bottom: 19px;
   }
@@ -112,6 +135,11 @@ ul {
 }
 
 @media screen and (min-width: 1280px) {
+  .icecreams {
+    transform: translateY(-171px);
+    margin-bottom: 147px;
+  }
+
   .girl-photo {
     margin-bottom: 15px;
   }
