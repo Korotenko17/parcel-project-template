@@ -3,6 +3,7 @@
  * Все паршалы подключаются сюда.
  */
 
+
 @import '../sass/base/base';
 @import '../sass/utils/variables';
 @import '../sass/components/container';
@@ -14,4 +15,4 @@
 @import './layout/howeitsmade';
 @import './layout/feedback';
 @import './layout/contacts';
-
+@import'./footer';
