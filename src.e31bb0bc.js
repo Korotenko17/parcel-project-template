@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\hero\\icecream-mob.png":[["icecream-mob.457a0ac6.png","images/hero/icecream-mob.png"],"images/hero/icecream-mob.png"],"./..\\images\\hero\\icecream-mob@2x.png":[["icecream-mob@2x.01cb7168.png","images/hero/icecream-mob@2x.png"],"images/hero/icecream-mob@2x.png"],"./..\\images\\how-it\\how-it-fon-mob@2x.png":[["how-it-fon-mob@2x.94d14606.png","images/how-it/how-it-fon-mob@2x.png"],"images/how-it/how-it-fon-mob@2x.png"],"./..\\images\\how-it\\how-it-fon-mob.png":[["how-it-fon-mob.bb36a351.png","images/how-it/how-it-fon-mob.png"],"images/how-it/how-it-fon-mob.png"],"./..\\images\\how-it\\how-it-fon-desk@2x.png":[["how-it-fon-desk@2x.14f385a5.png","images/how-it/how-it-fon-desk@2x.png"],"images/how-it/how-it-fon-desk@2x.png"],"./..\\images\\how-it\\how-it-fon-desk.png":[["how-it-fon-desk.73d1ba22.png","images/how-it/how-it-fon-desk.png"],"images/how-it/how-it-fon-desk.png"],"./..\\images\\comment\\coma.png":[["coma.5729c050.png","images/comment/coma.png"],"images/comment/coma.png"],"./..\\images\\contacts-background-img.png":[["contacts-background-img.b98c852d.png","images/contacts-background-img.png"],"images/contacts-background-img.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\images\\how-it\\how-it-fon-mob@2x.png":[["how-it-fon-mob@2x.94d14606.png","images/how-it/how-it-fon-mob@2x.png"],"images/how-it/how-it-fon-mob@2x.png"],"./..\\images\\how-it\\how-it-fon-mob.png":[["how-it-fon-mob.bb36a351.png","images/how-it/how-it-fon-mob.png"],"images/how-it/how-it-fon-mob.png"],"./..\\images\\how-it\\how-it-fon-desk@2x.png":[["how-it-fon-desk@2x.14f385a5.png","images/how-it/how-it-fon-desk@2x.png"],"images/how-it/how-it-fon-desk@2x.png"],"./..\\images\\how-it\\how-it-fon-desk.png":[["how-it-fon-desk.73d1ba22.png","images/how-it/how-it-fon-desk.png"],"images/how-it/how-it-fon-desk.png"],"./..\\images\\comment\\coma.png":[["coma.5729c050.png","images/comment/coma.png"],"images/comment/coma.png"],"./..\\images\\contacts-background-img.png":[["contacts-background-img.b98c852d.png","images/contacts-background-img.png"],"images/contacts-background-img.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49967" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54101" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
