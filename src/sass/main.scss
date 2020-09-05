@@ -3,11 +3,16 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
 
 @import '../sass/base/base';
+@import '../sass/utils/variables';
 @import '../sass/components/container';
+@import './utils/modern-normalize';
 
-
-@import './feedback';
-
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/howeitsmade';
+@import './layout/feedback';
+@import './layout/contacts';
+@import'./layout/footer';

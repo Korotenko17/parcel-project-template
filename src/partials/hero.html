@@ -1,56 +1,72 @@
 <!-- HERO SECTION -->
-<section class="section hero-section">
+<section class="section hero-section" id="hero">
   <div class="container hero-container">
-    <div class="hero-container-left">
+    <div class="hero-info-container">
       <h1 class="hero-title">
         ice cream <br />
         made with <br />
         <span>passion </span>
       </h1>
-      <button type="button" class="products-btn">Products</button>
+      <ul class="hero-work">
+        <li class="hero-work-list">
+          <span class="hero-work-place">16</span>
+          <span class="hero-work-description">cafes</span>
+        </li>
+        <li>
+          <span class="hero-work-place">23</span>
+          <span class="hero-work-description">food trucks</span>
+        </li>
+      </ul>
+    </div>
+    <div class="hero-btn-group">
+      <button type="button" class="product-btn">Products</button>
       <button type="button" class="how-btn">How it’s made?</button>
     </div>
-    <img
-      src="../images/hero/icecream-desk.png"
-      srcset="../images/hero/icecream-desk@2x.png 2x"
-      alt="icecream"
-    />
-    <div class="hero-description">
-      <img
-        src="../images/hero/milk-desk.png"
-        srcset="../images/hero/milk-desk@2x.png 2x"
-        alt="jug of milk"
-      />
-      <p>
+    <div class="hero-circle">
+      <picture class="hero-ice-cream">
+        <source
+          srcset="
+            /images/hero/icecream-mob.png    1x,
+            /images/hero/icecream-mob@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            /images/hero/icecream-tab.png    1x,
+            /images/hero/icecream-tab@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            /images/hero/icecream-desk.png    1x,
+            /images/hero/icecream-desk@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+
+        <img
+          src="/images/hero/icecream-mob.png"
+          srcset="/images/hero/icecream-mob@2x.png 2x"
+          alt="icecream"
+        />
+      </picture>
+    </div>
+    <div class="hero-description-container">
+      <p class="hero-description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et
       </p>
       <button type="button" class="hero-arrow-bnt">
         <img
-          src="../images/arrow.png"
-          srcset="../images/arrow@2x.png 2x"
+          src="./images/arrow.png"
+          srcset="./images/arrow@2x.png 2x"
           alt="arrow"
           width="26px"
           height="26px"
         />
       </button>
-    </div>
-    <div class="hero-container-right">
-      <ul class="hero-work">
-        <li class="hero-work-list">
-          <p class="hero-work-place">16</p>
-          <p class="hero-work-description">cafes</p>
-        </li>
-        <li>
-          <p class="hero-work-place">23</p>
-          <p class="hero-work-description">food trucks</p>
-        </li>
-      </ul>
-      <img
-        src="../images/hero/woman-desk.png"
-        srcset="../images/hero/woman-desk@2x.png 2x"
-        alt="woman eat icecream"
-      />
     </div>
   </div>
 </section>
