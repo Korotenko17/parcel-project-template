@@ -22,27 +22,34 @@
     .social-link-item:not(:last-child) {
             margin-right: 28px;
         }
-    
+        .footer-social-links{
+            display:flex;
+            justify-content: flex-end;
+            margin-bottom: 46px;
+        }
     .social-links{
         display: flex;
         justify-content: flex-end;
         margin-bottom: 46px;
         width: 32px;
         height: 32px;
-      
+        justify-content: center;
         align-items: center;
         border-radius: 50%;
         background-color: $text-clock-color;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        fill: $social-link-color;
         border-color: transparent;
         transition: all .25s cubic-bezier(.4,0,.2,1);
-    }
-    
-    .social-links:hover .footer-social-svg{
-        fill:$primary-title-color;
-    }
-    .social-links:focus .footer-social-svg{
-        fill:$primary-title-color;
-    }
+        &:hover,
+        &:focus {
+          background-color: $primary-title-color;
+          color: $primary-title-color;
+        }
+        }
     .footer-contakt-join
     {font-family: DM Sans;
     font-style: normal;
@@ -83,7 +90,7 @@
 
 @media screen and (max-width: 767px){
 .footer-rights-text
-{width: 154px;}}
+{max-width:154px;}}
 
 
 @media screen and (min-width: 768px){
@@ -109,3 +116,4 @@ line-height: 1.86;
     padding-top: 30px;
     padding-bottom: 30px;}
 }
+@media screen and (min-width: 1200px)
