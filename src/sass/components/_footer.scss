@@ -29,8 +29,6 @@
         }
     .social-links{
         display: flex;
-        justify-content: flex-end;
-        margin-bottom: 46px;
         width: 32px;
         height: 32px;
         justify-content: center;
@@ -49,6 +47,8 @@
           background-color: $primary-title-color;
           color: $primary-title-color;
         }
+        }.footer-contakt{
+            margin-left: 0;
         }
     .footer-contakt-join
     {font-family: DM Sans;
@@ -68,9 +68,9 @@
     }
     .footer-rights{
     padding: 25px 80px;
-    font-weight: 700;
-  
-    line-height: 1.5;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 22px;
     text-align: center;
     border-top: 1px solid #e1e1e1;
     /*margin-bottom: 22px;*/
@@ -83,8 +83,7 @@
     line-height: 186%;
     letter-spacing: 0.02em;
     color: $secondary-text-color;
-    /*max-width:154px;*/
-    margin-left: 79px;}
+   }
 
     /*TABLET*/
 
@@ -94,14 +93,20 @@
 
 
 @media screen and (min-width: 768px){
-.footer-social-links {
-width: 34px;
-height:34px;
+
+.footer .container{
+    max-width: 700px;
+    margin: 0 40px;
 }
 .footer-contakt-tell{
 font-size: 14px;
 line-height: 1.86;
-}
+
+}.footer-social-links {
+    width: 34px;
+    height:34px;
+    } 
+  
 .footer-section {
     display: flex;
     flex-direction: row;
@@ -109,11 +114,41 @@ line-height: 1.86;
     padding-left: 36px;
     padding-right: 36px;
     margin-bottom: 91px;}
-
+.footer-rights{
+    margin-top: 29px;
+    max-width: 276px;
+}
     .footer-rights-text
     {line-height: 1.86;
     letter-spacing:0.02em;
     padding-top: 30px;
     padding-bottom: 30px;}
+    .footer-contakt-tell{
+        font-size: 14px;
+        line-height: 1.86;
+        margin-right: 2px;
+        }
 }
-@media screen and (min-width: 1200px)
+
+/*DESKTOP*/
+
+
+@media screen and (min-width: 1200px){
+    .footer-section{
+        margin-bottom:98px;
+        padding-left:75px;
+        padding-right:75px;
+    }
+    .footer-text{
+        margin-bottom: 15px;
+}
+.footer-title{
+    margin-bottom: 97px;
+}
+    .social-link-item:not(:last-child) {
+        margin-right: 9px;
+    }
+.footer-social-links{
+    margin-bottom: 50px;
+}}
+
