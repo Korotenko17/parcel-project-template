@@ -1,18 +1,31 @@
 // HERO SCSS
 
 .hero-section {
-  background: #ffb8ca;
+  background: $hero-background-color;
 }
 
+// MOBILE
+
 .hero-container {
-  padding-left: 20px;
-  padding-right: 20px;
+  background-image: url('../images/hero/icecream-mob.png');
+  background-repeat: no-repeat;
+  background-size: 171px 410px;
+  padding-top: 80px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: url('../images/hero/icecream-mob@2x.png');
+    background-repeat: no-repeat;
+  }
 }
 
 .hero-title {
   font-family: Titan One;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 26px;
   line-height: 1.15;
   letter-spacing: 0.04em;
@@ -61,11 +74,3 @@
   padding-bottom: 7px;
   cursor: pointer;
 }
-
-// @media screen and (min-device-pixel-ratio: 2),
-//   screen and (min-resolution: 192dpi),
-//   screen and (min-resolution: 2dppx) {
-//   .box {
-//     background-image: url('photo@2x.png');
-//   }
-// }

@@ -1,8 +1,132 @@
-.hawe-its-made ul,li {
-    margin: 0;
-    padding: 0;
+ul, h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+  }
+  img {
+    display: block;
+    border: none;
+  }
+  
+
+@media screen and (max-width: 767px) {
+    .hawe-its-made {
+        padding-top: 125px;
+        padding-bottom: 145px;
+        background-color: $pink-background-color;
+    }
+
+    .hawe-it-main-taitle h2 {
+            font-family: Titan One;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 26px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 34px;
+            line-height: 39px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color:$primary-title-color;
+    } 
+
+    .hawe-it-main-taitle  p {
+        font-family: Titan One;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.17px;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        text-align: center;
+        color: #FFA5BA;
+}
+    .hawe-it-container-about-item img {
+        max-width: 100%;
+        height: auto;
+        overflow: auto;
+        margin-bottom: 46px;
+    }
+
+    .hawe-it-text-black {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.50;
+    margin-bottom: 47px;
+    color: $primary-text-color;
+    p {
+        color: #907E82;
+    }
+    }
+
+   /* .background-img {клас для фото бекграунді } */
+    
+.hawe-its-made-btn {
+    /*position: absolute;*/
+    width: 176px;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 37px;
+    padding-left: 37px;
+    justify-content: center;
+
+font-family: DM Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 1.29px;
+display: flex;
+align-items: center;
+text-align: center;
+color:$primary-title-color;
+
+    svg {
+        margin-left: 14px;
+        width: 5px;
+        height: 8px;
+    }
+
+}
+ 
+    
+.hawe-it-container-our-advantages-item img {
+    margin-bottom: 16px;
+
+}
+.hawe-it-container-our-advantages-item h3 {
+    width: 98px;
+height: 56px;
+left: 20px;
+top: 3716px;
+
+font-family: Titan One;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 41px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #D41443;
 }
 
-@media screen and (min-width: 320px) {
+.hawe-it-container-our-advantages-item p {
+width: 230px;
+height: 36px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 170%;
+color: $primary-text-color;
+}
     
+
 }
