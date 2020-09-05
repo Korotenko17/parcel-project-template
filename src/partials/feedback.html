@@ -1,103 +1,115 @@
-<section class="feedback">
-  <h2 hidden>Our feedback</h2>
-  <picture>
-    <source
-      srcset="
-        ./images/comment/comment-photo-mob.png    1x,
-        ./images/comment/comment-photo-mob@2x.png 2x
-      "
-      media="(max-width:767px)"
-      type="image/png"
-    />
-    <source
-      srcset="
-        ./images/comment/comment-photo-desk.png    1x,
-        ./images/comment/comment-photo-desk@2x.png 2x
-      "
-      media="(min-width:1200px)"
-      type="image/png"
-    />
-    <source
-      srcset="
-        ./images/comment/comment-photo-tab.png    1x,
-        ./images/comment/comment-photo-tab@2x.png 2x
-      "
-      media="(min-width:768px)"
-      type="image/png"
-    />
-    <img
-      class="icecream"
-      src="./images/comment/comment-photo-tab.png"
-      alt="differents type of icecream"
-    />
-  </picture>
-  <ul class="feedback-list">
-    <li class="feedback-item">
-      <img
-        class="girl-photo"
-        src="./images/comment/comment-1.png"
-        alt="first girl"
+
+<section class="feedback container" id="feedback">
+    <h2 hidden>Our feedback</h2>
+    <picture>
+      <source
+        srcset="
+          ./images/comment/comment-photo-mob.png    1x,
+          ./images/comment/comment-photo-mob@2x.png 2x
+        "
+        media="(max-width:767px)"
+        type="image/png"
       />
-      <p class="feedback-text">
-        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
-        sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis
-        in nibh vel risus.
-      </p>
-      <p class="name-text">Emily, Los Angeles</p>
-    </li>
-    <li class="feedback-item" hidden>
-      <img
-        class="girl-photo"
-        src="./images/comment/comment-2.png"
-        alt="second girl"
+      <source
+        srcset="
+          ./images/comment/comment-photo-desk.png    1x,
+          ./images/comment/comment-photo-desk@2x.png 2x
+        "
+        media="(min-width:1200px)"
+        type="image/png"
       />
-      <p class="feedback-text">
-        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
-        sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis
-        in nibh vel risus.
-      </p>
-      <p class="name-text">Emily, Los Angeles</p>
-    </li>
-    <li class="feedback-item" hidden>
-      <img
-        class="girl-photo"
-        src="./images/comment/comment-3.png"
-        alt="third girl"
+      <source
+        srcset="
+          ./images/comment/comment-photo-tab.png    1x,
+          ./images/comment/comment-photo-tab@2x.png 2x
+        "
+        media="(min-width:768px)"
+        type="image/png"
       />
-      <p class="feedback-text">
-        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
-        sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis
-        in nibh vel risus.
-      </p>
-      <p class="name-text">Emily, Los Angeles</p>
-    </li>
-    <li>
-      <ul class="checkbox-list">
-        <li class="checkbox-item">
-          <label class="check-label">
-            <input class="check-input" type="checkbox" />
-            <svg class="check-svg" width="12" height="12">
-              <use href="./images/sprite.svg#icon-domik"></use>
-            </svg>
-          </label>
-        </li>
-        <li class="checkbox-item">
-          <label class="check-label">
-            <input class="check-input" type="checkbox" />
-            <svg class="check-svg" width="12" height="12">
-              <use href="./images/sprite.svg#icon-ellipse-grey"></use>
-            </svg>
-          </label>
-        </li>
-        <li class="checkbox-item">
-          <label class="check-label">
-            <input class="check-input" type="checkbox" />
-            <svg class="check-svg" width="12" height="12">
-              <use href="./images/sprite.svg#icon-ellipse-grey"></use>
-            </svg>
-          </label>
-        </li>
-      </ul>
-    </li>
-  </ul>
+      <img
+        class="icecreams"
+        src="./images/comment/comment-photo-tab.png"
+        alt="differents type of icecream"
+      />
+    </picture>
+    <ul class="feedback-list">
+      <li class="feedback-item">
+        <img
+          class="girl-photo"
+          src="./images/comment/comment-1.png"
+          alt="first girl"
+        />
+        <p class="feedback-text">
+          <span>
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+            ipsum primis in nibh vel risus.
+          </span>
+        </p>
+        <svg class="separ" width="32" height="4">
+          <use href="./images/sprite.svg#icon-group-ellipse"></use>
+        </svg>
+        <p class="name-text">Emily, Los Angeles</p>
+      </li>
+      <li class="feedback-item" hidden>
+        <img
+          class="girl-photo"
+          src="./images/comment/comment-2.png"
+          alt="second girl"
+        />
+        <span>
+          <p class="feedback-text">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+            ipsum primis in nibh vel risus.
+          </p>
+        </span>
+  
+        <p class="name-text">Emily, Los Angeles</p>
+      </li>
+      <li class="feedback-item" hidden>
+        <img
+          class="girl-photo"
+          src="./images/comment/comment-3.png"
+          alt="third girl"
+        />
+        <span>
+          <p class="feedback-text">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+            ipsum primis in nibh vel risus.
+          </p>
+        </span>
+  
+        <p class="name-text">Emily, Los Angeles</p>
+      </li>
+      <li>
+        <ul class="checkbox-list">
+          <li class="checkbox-item">
+            <label class="check-label">
+              <input class="check-input" type="checkbox" />
+              <svg class="check-svg" width="12" height="12">
+                <use href="./images/sprite.svg#icon-domik"></use>
+              </svg>
+            </label>
+          </li>
+          <li class="checkbox-item">
+            <label class="check-label">
+              <input class="check-input" type="checkbox" />
+              <svg class="check-svg" width="12" height="12">
+                <use href="./images/sprite.svg#icon-ellipse-grey"></use>
+              </svg>
+            </label>
+          </li>
+          <li class="checkbox-item">
+            <label class="check-label">
+              <input class="check-input" type="checkbox" />
+              <svg class="check-svg" width="12" height="12">
+                <use href="./images/sprite.svg#icon-ellipse-grey"></use>
+              </svg>
+            </label>
+          </li>
+        </ul>
+      </li>
+    </ul>
 </section>

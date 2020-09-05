@@ -30,7 +30,7 @@ a {
   }
 
   .contacts-list-item {
-    /* margin-top: -170px; */
+    margin-top: -140px;
     background: #ffffff;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
@@ -44,7 +44,7 @@ a {
     margin-left: auto;
 
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 160px;
     }
   }
 
@@ -237,7 +237,7 @@ a {
   }
 
   .contacts-list-item {
-    /* margin-top: -170px; */
+    margin-top: -130px;
     background: #ffffff;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
@@ -431,12 +431,18 @@ a {
     padding-top: 50px;
     padding-bottom: 165px;
     background-color: #fff5f6;
+  }
+
+  .contact-background-image {
     background-image: url('../images/contacts-background-img.png');
     background-repeat: no-repeat;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .contacts-list-item {
-    /* margin-top: -170px; */
+    margin-top: -150px;
     background: #ffffff;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
