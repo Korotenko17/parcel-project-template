@@ -9,21 +9,19 @@
     />
     <title>IceCream</title>
   </head>
+  <header>
+      <include src="./partials/header.html"></include>
+  </header>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/header.html"></include>
-    <!-- <include src="./partials/example.html"></include> -->
-    <include src="./partials/hero.html"></include>
-    
-    <include src="./partials/products.html"></include>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/howe-its-made.html"></include>
+      <include src="./partials/feedback.html"></include>
+      <include src="./partials/contacts.html"></include>
+  <footer>
 
-    <include src="./partials/howe-its-made.html"></include>
+  </footer>
 
-    <include src="./partials/feedback.html"></include>
-
-    <include src="./partials/contacts.html"></include>
-
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./js/menu.js"></script>
     <script src="./index.js"></script>
   </body>
