@@ -20,12 +20,15 @@
         }
     }
   }
-.howe-it-background  {
+.how-it-background-image  {
   @media screen and (min-width: 1200px) {
 
     background-image: url(../images/how-it/how-it-fon-desk.png);
     background-position: 100% 53%;
-    background-size: 100%;
+    width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
 
 
     @media screen and (min-device-pixel-ratio: 2),

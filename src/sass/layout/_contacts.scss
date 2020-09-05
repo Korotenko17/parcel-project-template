@@ -431,8 +431,14 @@ a {
     padding-top: 50px;
     padding-bottom: 165px;
     background-color: #fff5f6;
+  }
+
+  .contact-background-image {
     background-image: url('../images/contacts-background-img.png');
     background-repeat: no-repeat;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .contacts-list-item {
