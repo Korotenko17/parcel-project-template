@@ -824,6 +824,23 @@ summary {
     background-image: url(/arrow.dd9de399.png);
   }
 }
+@media screen and (min-width: 1200px) {
+  .product-btn {
+    font-size: 14px;
+    line-height: 18px;
+    width: 104px;
+    height: 40px;
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .how-btn {
+    font-size: 14px;
+    line-height: 18px;
+    width: 138px;
+    height: 40px;
+  }
+}
 *,
 *::before,
 *::after {
