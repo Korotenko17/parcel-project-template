@@ -222,6 +222,14 @@
       border-radius: 50%;
     }
   }
+  .product-btn:hover,
+  .product-btn:focus {
+    background-color: #c7133e;
+  }
+  .how-btn:hover,
+  .how-btn:focus {
+    background-color: $hover-button-color;
+  }
 }
 
 // DESKTOP
