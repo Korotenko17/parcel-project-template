@@ -260,4 +260,45 @@
       line-height: 90.5%;
     }
   }
+
+  .hero-circle {
+    width: 538px;
+    height: 538px;
+    bottom: 67px;
+    left: 475px;
+
+    .hero-ice-cream {
+      width: 236px;
+      height: 557px;
+      top: 56px;
+      left: 119px;
+    }
+  }
+
+  .hero-description-container {
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 125px;
+
+    .hero-description {
+      width: 200px;
+      height: 78px;
+
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+
+      color: $secondary-white-color;
+
+      margin-bottom: 7px;
+    }
+
+    .hero-arrow-bnt {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+    }
+  }
 }
