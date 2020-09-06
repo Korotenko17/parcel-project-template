@@ -53,10 +53,12 @@
   padding: 7px 13px;
   cursor: pointer;
 
-  color: $secondary-white-color;
   background-color: $primary-title-color;
 
   margin-right: 8px;
+}
+.how-btn-link {
+  color: $primary-title-color;
 }
 
 .how-btn {
@@ -73,8 +75,11 @@
   padding: 7px 13px;
   cursor: pointer;
 
-  color: $primary-title-color;
   background-color: $secondary-white-color;
+}
+
+.product-btn-link {
+  color: $secondary-white-color;
 }
 
 .hero-circle {
