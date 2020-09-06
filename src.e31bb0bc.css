@@ -743,6 +743,19 @@ summary {
     width: 18px;
     height: 18px;
     border-radius: 50%;
+    background-image: url(/arrow-18px.02e6e7b3.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .product-btn:hover,
+.product-btn:focus {
+    background-color: #c7133e;
+  }
+}
+@media screen and (min-width: 768px) {
+  .how-btn:hover,
+.how-btn:focus {
+    background-color: #ecebeb;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -808,6 +821,7 @@ summary {
     width: 26px;
     height: 26px;
     border-radius: 50%;
+    background-image: url(/arrow.dd9de399.png);
   }
 }
 *,
