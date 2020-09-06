@@ -227,19 +227,37 @@
 // DESKTOP
 
 @media screen and (min-width: 1200px) {
-}
+  .hero-container {
+    padding-top: 171px;
+    padding-bottom: 292px;
+    padding-left: 115px;
+    padding-right: 115px;
 
-// @media screen and (min-width: 768px) {
-//   .hero-container {
-//     background-size: 143px 336px;
-//     background-image: url('../images/hero/icecream-tab.png');
-//     padding-top: 63px;
-//   }
-//   @media screen and (min-device-pixel-ratio: 2),
-//     screen and (min-resolution: 192dpi),
-//     screen and (min-resolution: 2dppx) {
-//     .hero-container {
-//       background-image: url('../images/hero/icecream-tab@2x.png');
-//     }
-//   }
-// }
+    background-image: url('../images/hero/woman-desk.png'),
+      url('../images/hero/milk-desk.png');
+
+    background-size: 293px 232px, 188px 191px;
+    background-repeat: no-repeat;
+    background-position: bottom 0px right 110px, bottom 45px left 70px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .box {
+        background-image: url('../images/hero/woman-desk@2x.png'),
+          url('../images/hero/milk-desk@2x.png');
+      }
+    }
+  }
+
+  .hero-title {
+    font-size: 38px;
+    line-height: 1.16;
+    margin-bottom: 25px;
+
+    > span {
+      font-size: 58px;
+      line-height: 90.5%;
+    }
+  }
+}
