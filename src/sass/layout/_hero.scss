@@ -121,7 +121,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .box {
+    .hero-container {
       background-image: url('../images/hero/woman-tab@2x.png'),
         url('../images/hero/milk-tab@2x.png');
     }
